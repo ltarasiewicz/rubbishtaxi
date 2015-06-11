@@ -1,0 +1,5 @@
+[11-Jul-2014 01:22:21 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rubbisht/public_html/wp-content/themes/rubbish_taxi/index.php on line 16
+[22-Jul-2014 05:52:52 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rubbisht/public_html/wp-content/themes/rubbish_taxi/gallery_template.php on line 4
+[21-Oct-2014 00:31:12 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rubbisht/public_html/wp-content/themes/rubbish_taxi/index.php on line 16
+[21-Oct-2014 00:31:27 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rubbisht/public_html/wp-content/themes/rubbish_taxi/index.php on line 16
+[15-Feb-2015 12:59:13 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/rubbisht/public_html/wp-content/themes/rubbish_taxi/index.php on line 15

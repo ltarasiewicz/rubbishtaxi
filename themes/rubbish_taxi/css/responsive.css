@@ -1,0 +1,543 @@
+@charset "utf-8";
+/* Cystom CSS Document */
+
+
+/*
+ * Fonts
+ */
+
+.mob_visible{ display: none;}
+.text_centre{ display: none;}
+.get_quote{ display: block !important}
+.about_person{ min-height: 506px;}
+.hide_desk_or{ font-size: 20px; color: #000; text-shadow: none; display: none; margin-left: 30px;}
+.contact_header{ display: none;}
+.contact_header h1{ float: left; font-size: 200px; margin-right: 20px;}
+.step3, .step2, .step1{ min-height: 300px;}
+.step2, .step3{ opacity: 1;}
+@media all and (max-width:480px){
+  .step2, .step3{ opacity: 1;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) 
+{
+  .step2, .step3{ opacity: 1;}
+    .mm-view {display:none;}
+  .step1image {display:none;}
+}
+
+a.logo span{display:none;}
+
+.border{display:none; }
+@media screen and (min-width: 1025px) and (max-width:1366px) 
+{
+	.jumbo-footer{ padding-left: 0;}
+	.jumbo-footer .text2{ width: 33%;}
+	.contact-email {
+    float: right;
+    margin: 0 6% 0 0;
+}
+.contact-cus_jumbotron .contact-content {
+    float: right;
+    width: 232px;
+}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1024px) 
+{
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.cus_jumbotron .container { width:100% !important; padding: 0 !important; margin:0px;   }
+	.container { width:100% !important; padding: 0 !important; margin:0px;   }
+	.jumbotron { padding: 0px 10px; width:100%; }
+	.jumbo-left-col .col-sm-8{margin-right:0px !important;}
+	.jumbo-right-col .col-sm-4{margin-left:0px !important;}
+	.phone h2 a{ font-size:34px !important; }
+	.phone span{ font-size:20px !important; }
+	.container_main{ width:100% !important; }
+	.container{ width:100% !important; }
+	.jumbo-footer{ padding-left:0px;}
+	.top-portion{ margin: 0px !important;} 
+	.navbar-collapse ul li a{ padding: 12px 5px;}
+	.container.add{margin-top:60px;   }
+	.navbar-collapse {margin-top:20px; }
+	.cus_jumbotron{padding: 180px 0px 0 0;}
+	.footer{ padding: 60px  0 0 0 !important;  }
+	.footer .sub-footer ul li{padding:0px 24px 0 24px; }
+	.footer .sub-footer ul li:first-child{padding:0px 24px 0 24px;}
+	
+	.about-us-before{ left: 25%;}
+	.blog-cus_jumbotron{ height: 879px;}
+	
+	/*------debashis---------*/
+	.modal-body{ display:block !important; }
+	
+	.modal-body{display:block !important;}
+	.modal-dialog{display:block !important;}
+	.top-portion{display:block !important;}
+	
+	
+
+	.jumbo-footer .text2{ width:346px; }
+	.map .placeholders{ overflow:hidden; padding-right:10px;  }
+	.service-area-cus_jumbotron .jumbo-footer{ padding-left:94px !important; margin-left:0px;  }
+	.contact-email {
+    float: right;
+    margin: 0 5% 0 1px;
+}
+.contact-address p {
+    float: right;
+    width: 347px;
+}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) 
+{
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.cus_jumbotron .container { width:100% !important; }
+	.top-portion{ display:none; }	
+	.phone{display:none;}
+	.text{display:none;}
+	.cus_jumbotron{padding: 180px 0px 0 0 !important;}
+	.jumbo-footer{display:block; }
+		h1.nopne{display:none;}
+	.cus-page-header .page-head-phone  {float:left; }
+	.get{display:block; float:right;  }
+	.container.add{ margin-top:80px; }
+	.navbar-collapse ul li a{ padding:12px 5px; font-size:16px;  }
+	
+	.navbar-collapse{ width: 238px; background: #f2f2f2; position: absolute; top: -84px; left: 0px; padding-top: 200px; overflow-y: inherit;}
+	.nav > li{ width: 100%;}
+	.navbar-toggle{ z-index: 99999999999999999999;}
+	.navbar-collapse{ max-height: inherit; padding-left:0px; padding-right:40px;}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color:inherit;}
+	.navbar-collapse ul li a{ font-size: 25px !important; padding-left: 30px !important;}
+	.navbar-collapse ul li.active{ border-bottom: 2px dotted #000 !important;}
+	
+	.hidden_tab{ display: none;}
+	.hidden_desk{ display: block;}
+	.cus-menu{ background: none;}
+	.mob_visible{ display: none;}
+	.hidden_mobile{ display: block !important ;}
+	.text_centre{ display: block !important;}
+	.ftr_nav{ display: none;}
+	
+	.about-us-before{left: 0px; margin-left: 0px; width: 100%;}
+	.title-header1{ font-size: 25px;}
+	.two-col{ -moz-column-count: 1;}
+	.about_dis_none{ display: none;}
+	.about_person{ min-height: 350px;}
+	.cus-page-header h1{ display: none;}
+	.hide_desk_or{ display: inline-block;}
+	
+	.blog_right_bar{ display: none;}
+	.blog-img-holder{ display: none;}
+	.blog-cus_jumbotron{ height: 879px !important;}
+	.contact_header{ display: block;}
+	
+	.form-control{ width: 70%;}
+	
+	.map_service img{ width: 100%;}
+	.title-header1{ margin-bottom: 0px;}
+	.service-area ul li{ font-size: 23px;}
+	
+	
+	.modal-body{display:block !important;}
+	.modal-dialog{display:block !important;}
+	.border{display:none; }
+	
+ 	.aboutUs-cus_jumbotron{background: url("../images/dist/about_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	}	
+ 	.cus_jumbotron{ background:none; }
+ 	.qutebox{ display: none;} 
+ 	
+ 	.map_service img{ width:100%; }
+}
+
+@media screen and  (max-width: 1000px) {
+	.navbar-fixed-top, .navbar-fixed-bottom{ position:absolute; }
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.cus_jumbotron .container { width:100% !important; }
+	.top-portion{ display:none; }	
+	.phone{display:none; }
+	.text{display:none;}
+	.cus_jumbotron{padding: 180px 0px 0 0 !important;}
+	.jumbo-footer{display:none;}
+	h1.nopne{display:none;}
+	.cus-page-header .page-head-phone  {float:left; }
+	.get{display:block; float:right;  }
+	.container.add{ margin-top:80px; }
+	.navbar-collapse ul li a{ padding:12px 5px; font-size:16px;  }
+	.cus-menu{ background:none; }
+	.style1.nodes{display:none;}
+	.cus_jumbotron { background-size:20%; background: url("../images/dist/homeTopBg.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);}
+	
+	/*------debashis---------*/
+	
+	.cus_jumbotron.adj { height:593px; background: url("../images/dist/taxi_bg.jpg") no-repeat  center bottom !important;   }
+	a.logo span{display:block; font-size:27px; color:#010101; line-height:27px; text-align:center; position:absolute; left:0%; top:188px; z-index:99999; display:block; width:100%; height:40px;   font-family: vtks_untitledregular,sans-serif; }
+	.title-header1{ font-size:2em; }
+	.placeholder p span.st{ font-weight:bold; }
+	.navx{ position:relative; top:-86px; }
+	.modal-dialog{top:0px;}
+	
+	.modal-body{display:block !important;}
+	.modal-dialog{display:block !important;}
+	
+	.btn-submit{ width:153px; height:40px; background: url("../images/dist/submit-btn.png") no-repeat -41px center; border:#000 1px solid;  }
+	
+	.border{display:block; }
+	
+	
+	 .aboutUs-cus_jumbotron {background: url("../images/dist/about_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	}	
+ 	
+ 	.about-us-before{background:none; }
+ 	.cus_jumbotron{ background:none; }
+ 	
+ 	.aboutx{background: url("../images/dist/about_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:400px; 
+ 	}	
+ 	
+ 	.services-cus_jumbotron{display:none; }
+ 	.services-cus .cus_jumbotron {display:none; }
+ 	.services-rubbishBefore {display:none; }
+ 	
+ 	.gallery-cus_jumbotron{display:none; }
+ 	.gallery-cus .cus_jumbotron {display:none; }
+ 	.gallery-rubbishBefore {display:none; }
+ 	
+ 	.service-area-cus_jumbotron{display:none; }
+ 	.service-area-cus .cus_jumbotron {display:none; }
+ 	.service-area-rubbishBefore {display:none; }
+ 	
+ 	.blog-area-cus_jumbotron{display:none; }
+ 	.blog-area-cus .cus_jumbotron {display:none; }
+ 	.blog-area-rubbishBefore {display:none; }
+ 	
+ 	.blog-cus_jumbotron{display:none; }
+ 	.blog-cus .cus_jumbotron {display:none; }
+ 	.blog-rubbishBefore {display:none; }
+ 	
+ 	
+ 	.contact-cus_jumbotron{display:none; }
+ 	
+ 	
+ 	.servesx{background: url("../images/dist/serv_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:400px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.galleryx{background: url("../images/dist/gallery_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:400px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.areax{background: url("../images/dist/area_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.blogx{background: url("../images/dist/blog_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px !important; 
+ 	display:block; 
+ 	
+ 	}
+ 	
+ 	.blog-areax{background: url("../images/dist/blogpost_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px ; 
+ 
+ 	
+ 	}	
+ 	
+
+ 	
+ 	.conx {background: url("../images/dist/contact_ipad.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px ; 
+ 	display:block; 
+ 	
+ 	}	
+ 	
+ 	
+}
+
+@media screen and  (max-width: 767px) {
+
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.get{display:none;}
+	.cus-page-header .page-head-phone{ float:none; margin:0 auto;   }
+	.navbar-header {display:block;}
+	.navBtn {display:none;}
+	.placeholder.left a{ text-align:center; margin-bottom:20px;  }
+	.placeholder.right a{ text-align:center; margin-bottom:20px;  }
+	.footer .sub-footer ul li { padding: 0px 10px;}
+	.placeholder.right img{ margin: 0 auto; float:none; }
+	
+	.navbar-collapse{ background: #f2f2f2;  overflow-y: inherit;}
+	.navbar-collapse ul li a{ font-size: 25px !important; padding-left: 30px !important;}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color:inherit;}
+	.navbar-collapse ul li.active{ border-bottom: 2px dotted #000 !important;}
+	
+	.hidden_mobile{ display: none !important ;}
+	.hidden_desk{ display: none;}
+	
+	.mob_visible{ display: block;}
+	
+	.footer ul li{ font-size: 20px !important ;}
+	
+	.ftr_nav{ display: none;}
+	.text_centre{ display: block !important;}
+	.text_centre li{ width: 100% !important; display: inline-block !important; border: none;}
+	.footer .sub-footer ul li{ border-right: none;}
+	
+	.about-us-before{left: 0px; width: 100%; }
+	.title-header1{ font-size: 25px;}
+	.two-col{ -moz-column-count: 1;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 1;
+       -webkit-column-gap: 20px;
+	   column-count: 1;
+	   column-gap: 20px;}
+	.about_dis_none{ display: none;}
+	.cus-page-header h1{ display: none;}
+	.about-us-before{left: 0px; margin-left: 0px;}
+	.about_person{ min-height: inherit;}
+		
+	.blog_right_bar{ display: none;}
+	.blog a{ width:55% !important; font-size: 15px; border:#333 1px solid; text-align: center;}
+	.blog-post .post-date{font-size: 2.375em;}
+	.pagination a.pgin-left{width: 100px; border-right:#000; background: url(../images/dist/pagination-new2.png) no-repeat 0 0;}
+	.pagination a.pgin-right{width: 106px; border-right:#000;  background: url(../images/dist/pagination-old2.png) no-repeat 0 0;  }
+	.blog-img-holder{ display: none;}
+	
+	.comments .comment-list li p{ width: 100%; margin-top: 20px;}
+	.comment-form .form-input{ width: 100%; margin-top: 20px;}
+	.comment-form .comment-submit-btn{ margin-left: 0px;}
+	.blog-cus_jumbotron{ height: 879px !important;}
+	
+	.contact_header{ display: block;}
+	.form-control{ width: 100%; float: left; margin-bottom: 10px;}
+	.contact_header h1{ float: left; font-size: 50px; margin-right: 20px; margin-bottom: 0px; margin-top: 0px;}
+	.contact-cus_jumbotron{ }
+	
+	.map_service img{ width: 100%;}
+	.title-header1{ margin-bottom: 0px;}
+	.service-area ul li{ font-size: 23px;}
+	
+	.services-rubbishBefore{ background-size: 100%;}
+	.titel10{ font-size: 30px !important; text-align: left;}
+	
+	.step1{width:100% !important;  }
+	.step2{width:100% !important;  }
+	.step3{width:100% !important;  }
+	
+	a.cus-link{
+	background: url(../images/dist/btm.png) no-repeat;
+	background-position: right;
+	font-size: 1.375em;
+	padding-right:40px;}
+ 	
+	.border{display:block; }
+	
+	.noned{display:block; border:0;  }
+	
+	.aboutx{background: url("../images/dist/about_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	}	
+ 	
+ 	.servesx{background: url("../images/dist/serv_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	}	
+ 	
+ 	.galleryx{background: url("../images/dist/gallery_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	}	
+ 	
+ 	.areax{background: url("../images/dist/area_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	}
+ 	
+ 	.blogx {background: url("../images/dist/blog_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px; 
+ 	}		
+ 	
+ 	.blog-areax {background: url("../images/dist/blogpost_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px;
+ 	overflow:hidden;  
+ 	}	
+ 		
+ 	.conx {background: url("../images/dist/contact_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+ 	background-size:100%; width:100%;  
+ 	height:450px;
+ 	overflow:hidden;  
+ 	display:block; 
+ 	}	
+
+	.contact-cus_jumbotron{
+		background: url("../images/dist/contact_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+	 	background-size:100%; width:100%;  
+	 	height:450px;
+	 	overflow:hidden;  
+	 	display:block; 
+	}	
+
+   .jumbotron_st2{
+		background: url("../images/dist/contact_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+	 	background-size:100%; width:100%;  
+	 	height:450px;
+	 	overflow:hidden;  
+	 	display:block; 
+	}	
+
+	.jumbotron_st3{
+		background: url("../images/dist/contact_iphone.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+	 	background-size:100%; width:100%;  
+	 	height:450px;
+	 	overflow:hidden;  
+	 	display:block; 
+	}
+ 	.navbar-fixed-top, .navbar-fixed-bottom{ position:absolute; }
+	.form-submit input[type="submit"]{ margin-left:0px;}
+ 	
+}
+
+@media screen and  (max-width: 510px) {
+
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	a.logo{ left: 62%;}
+	.border{display:block; }
+	.cus_jumbotron.adj {
+    	
+    	background-size:115%!important;
+    
+   		 height: 300px;
+	
+}
+.form-submit input[type="submit"]{ margin-left:0px;}
+}
+
+@media screen and  (max-width: 480px) {
+
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
+	.rubbishBefore{ width:100% !important; }
+	.get{display:none;}
+	.cus-page-header .page-head-phone{ float:none; margin:0 auto;   }
+	.navbar-header {display:block;}
+	.navBtn {display:none;}
+	.placeholder.left a{ text-align:center; margin-bottom:20px;  }
+	.placeholder.right a{ text-align:center; margin-bottom:20px;  }
+	.footer .sub-footer ul li { padding: 0px 10px;}
+	.placeholder.right img{ margin: 0 auto; float:none; }
+	h1.title-header1 { font-size:16px; }
+	.footer{ overflow:hidden; }
+	.footer ul li{ font-size:11px; }
+	
+	.services.add{ display:block; }
+	a.cus-link{ border:#333 1px solid; width:100%; text-align:center; float:none; margin:0;   }
+	
+	/*------debashis---------*/
+	.services.add{ display:block; }
+	a.cus-link{ border:#333 1px solid; width:100%; text-align:center; float:none; margin:0;   }
+	
+	.hidden_tab{border-top: 3px dotted #0D131A; border-bottom: 3px dotted #0D131A; padding:30px 0px 50px; }
+	a.logo{background-size:67%; left:50%;  }
+	a.logo:hover{background-size:67%; }
+	h1.title-header1{ font-size:19px; }
+	h2.sub-header2{ font-size:19px; }
+	.services.add h2 { font-size:19px; }
+	a.logo span{top:129px;}	
+	.border{display:block; }
+	.form-submit input[type="submit"]{ margin-left:0px;}
+}
+	
+
+
+@media screen and  (max-width: 480px)
+{
+	ul.cus-bullet li{ font-size:16px !important; }
+	.get-quote-btn{ width:250px; background-size:100%;  }
+	
+	.blogx {height:440px !important; 
+ 	display:block; 
+ 	
+ 	}
+ 	.blog-areax {height:440px !important; 
+ 	display:block; 
+ 	
+ 	}
+}
+
+
+@media screen and  (max-width: 320px)
+{
+	ul.cus-bullet li{ font-size:16px !important; }
+	.get-quote-btn{ width:250px; background-size:100%;  }
+	
+	.servesx{ 
+ 	height:300px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.galleryx{
+ 	height:300px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.areax{height:300px; 
+ 	display:block; 
+ 	}	
+ 	
+ 	.blogx {height:300px !important; 
+ 	display:block; 
+ 	
+ 	}
+ 	.blog-areax {height:300px !important; 
+ 	display:block; 
+ 	
+ 	}
+ 	
+ 	.aboutx {height:300px; 
+ 	
+ 	
+ 	}	
+
+ 	
+ 	.conx {height:300px; 
+ 	display:block; 
+ 	
+ 	}	
+ 	
+ 	.form-submit input[type="submit"]{ margin-left:0px;}
+ 	
+ 	.photo-gallery img{width:88% !important; }
+ 	
+ 	.cus_jumbotron.adj {
+   	background-position:0 0;
+    height:212px;
+    background-size:100%; 
+}
+}
+
+
