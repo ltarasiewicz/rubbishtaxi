@@ -297,6 +297,9 @@ a.logo span{display:none;}
 	.mob_visible{ display: block;}
 	
 	.footer ul li{ font-size: 20px !important ;}
+    .footer-partial h4 {
+        font-size: 22px;
+    }
 	
 	.ftr_nav{ display: none;}
 	.text_centre{ display: block !important;}

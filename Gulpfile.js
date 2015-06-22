@@ -3,12 +3,12 @@ var rename = require('gulp-rename');
 var gifsicle = require('imagemin-gifsicle');
 var jpegoptim = require('imagemin-jpegoptim');
 var pngquant = require('imagemin-pngquant');
-
 var minifyCSS = require('gulp-minify-css');
 var uglifyJS = require('gulp-uglify');
 var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('compress', function () {
+gulp.task('compress-1', function () {
     return gulp.src('themes/rubbish_taxi/images/**.*')                
         .pipe(jpegoptim({progressive: true, max: 70})())
         .pipe(pngquant({ quality: '60-70' })())
@@ -16,7 +16,7 @@ gulp.task('compress', function () {
         .pipe(gulp.dest('themes/rubbish_taxi/images/dist'));
 });
 
-gulp.task('compress2', function () {
+gulp.task('compress-2', function () {
     return gulp.src('themes/rubbish_taxi/images/headers/**.*')                
         .pipe(jpegoptim({progressive: true, max: 70})())
         .pipe(pngquant({ quality: '60-70' })())
@@ -25,15 +25,7 @@ gulp.task('compress2', function () {
 });
 
 
-
-
-gulp.task('minifyCSS', ['concatCSS'], function() {
-    return gulp.src('themes/rubbish_taxi/css/dist/*.css')
-        .pipe(minifyCSS())
-        .pipe(gulp.dest('themes/rubbish_taxi/css/dist/'));
-});
-
-gulp.task('concatCSS', function() {
+gulp.task('process-css', function() {
 
     var files = [
         'themes/rubbish_taxi/css/bootstrap.css',
@@ -43,44 +35,27 @@ gulp.task('concatCSS', function() {
     ];
 
     return gulp.src(files)
-        .pipe(concat("bundle.css"))
-        .pipe(gulp.dest('themes/rubbish_taxi/css/dist/'));
-});
-
-gulp.task('renameCSS', ['minifyCSS'], function() {
-    gulp.src('themes/rubbish_taxi/css/dist/bundle.css')
+        .pipe(sourcemaps.init())
+        .pipe(concat("main-bundle.css"))
+        .pipe(minifyCSS())
         .pipe(rename(function(path) {
             path.basename += ".min";
         }))
-        .pipe(gulp.dest("themes/rubbish_taxi/css/"));
+        .pipe(sourcemaps.write('sourcemaps/'))
+        .pipe(gulp.dest('themes/rubbish_taxi/css/'));
 });
 
-gulp.task('uglifyJS', function (){
-    var files = [
-        'themes/rubbish_taxi/js/bootstrap.min.js',
-        'docs.min.js',
-        'jquery.fancybox.js',
-        'jquery.js',
-        'jquery_002.js',
-        'jquery_003.js',
-        'main.js',
-        'masonry.min.js'
-    ];
+gulp.task('process-js', function (){
     gulp.src('themes/rubbish_taxi/js/*.js')
+        .pipe(sourcemaps.init())
         .pipe(uglifyJS())
-        .pipe(gulp.dest('themes/rubbish_taxi/js/dist/'));
-});
-
-gulp.task('concatJS', function() {
-    gulp.src('themes/rubbish_taxi/js/dist/*.js')
-        .pipe(concat('bundle.js'))
-        .pipe(gulp.dest('themes/rubbish_taxi/js/dist/'));
-});
-
-gulp.task('renameJS', function() {
-    gulp.src('themes/rubbish_taxi/js/dist/bundle.js')
+        .pipe(concat('main-bundle.js'))
         .pipe(rename(function(path) {
             path.basename += ".min";
         }))
+        .pipe(sourcemaps.write('sourcemaps/'))
         .pipe(gulp.dest("themes/rubbish_taxi/js/"));
 });
+
+
+gulp.task('process-img', ['compress-1', 'compress-2']);
