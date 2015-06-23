@@ -1225,7 +1225,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     color: #4A4A4A;
 }
 .footer-partial h4 {
-    border-bottom: 1px solid #a5aeb6;
+    border-bottom: 1px dotted #a5aeb6;
     width: 80%;
     padding-bottom: 10px;
 }
