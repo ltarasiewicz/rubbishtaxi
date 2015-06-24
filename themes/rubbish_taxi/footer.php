@@ -100,17 +100,6 @@
                     <li><a href="#">FAQS</a></li>
                 </ul>-->
             </div>
-
-            <div class="col-md-8 placeholder mob_visible">
-                <ul>
-                    <li class="copyright">
-                        Copyright &copy; 2014 The Rubbish Taxi. <br/>
-                        All Rights Reserved.
-                    </li>
-                    <li>Art & Design By <a href="http://kingatarczynska.com">kingatarczynska.com</a></li>
-                    <li>Produced and Marketed by <a href="http://www.webmarketers.com.au">Web Marketers Crew</a></li>
-                </ul>
-            </div>
         </div>
     </div>
 
