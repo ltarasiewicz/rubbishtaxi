@@ -12,7 +12,7 @@ $posts = get_posts($args);
 <ul>
     <?php foreach ($posts as $post) : ?>
     <li>
-        <a><?php echo $post->post_title; ?></a>
+        <a href="<?php echo get_permalink($post->id) ?>"><?php echo $post->post_title; ?></a>
     </li>
     <?php endforeach ?>
 </ul>
