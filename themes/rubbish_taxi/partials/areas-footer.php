@@ -15,4 +15,7 @@ $posts = get_posts($args);
             <a href="<?php echo get_permalink(get_page_by_title('Areas')) ?>"><?php echo $post->post_title; ?></a>
         </li>
     <?php endforeach ?>
+    <li>
+    <a href="http://rubbishtaxi.com.au/contact-us/" target="_blank" class="ask-area-btn">Ask about your area <i class="glyphicon glyphicon-chevron-right hidden-sm"></i> </a>
+    </li>
 </ul>

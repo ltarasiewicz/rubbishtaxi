@@ -53,7 +53,6 @@
 	 * Without further ado, the loop:
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
-test
 <?php /* How to display posts of the Gallery format. The gallery category is the old way. */ ?>
 
 	<?php if ( ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) || in_category( _x( 'gallery', 'gallery category slug', 'twentyten' ) ) ) : ?>

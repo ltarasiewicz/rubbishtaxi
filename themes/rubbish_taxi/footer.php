@@ -10,7 +10,7 @@
  * @since Twenty Ten 1.0
  */
 ?>
-<div class="container footer">
+<div class="container footer <?php if ('area' === get_post_type()) { echo 'no-border'; } ?>">
     <div class="row ">
         <div class="col-sm-3">
             <div class="footer-partial">

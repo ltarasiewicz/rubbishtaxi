@@ -65,8 +65,7 @@ foreach( $myposts as $post  ) :
         
         <div class="row">
         	<!-- blog-post -->
-        	<div class="col-xs-12 col-md-8 placeholder">		
-
+        	<div class="col-xs-12 col-md-8 placeholder">
 			<?php
 			 //Run the loop to output the posts.
 			 //* If you want to overload this in a child theme then include a file

@@ -420,7 +420,14 @@ a.logo span{display:none;}
 	}
  	.navbar-fixed-top, .navbar-fixed-bottom{ position:absolute; }
 	.form-submit input[type="submit"]{ margin-left:0px;}
- 	
+
+    #areas-list {
+        height: 300px;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
 }
 
 @media screen and  (max-width: 510px) {
@@ -537,10 +544,25 @@ a.logo span{display:none;}
  	.photo-gallery img{width:88% !important; }
  	
  	.cus_jumbotron.adj {
-   	background-position:0 0;
-    height:212px;
-    background-size:100%; 
+        background-position:0 0;
+        height:212px;
+        background-size:100%;
+    }
 }
+
+@media screen and  (min-width: 768px) and (max-width: 991px) {
+    .footer .col-sm-3:last-child a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .footer .col-sm-3:last-child a:last-child {
+        margin-top: 15px;
+    }
+
+    .ask-area-btn {
+        background-position: center;
+    }
 }
 
 
