@@ -24,8 +24,8 @@
         <div class="single-area-section">
             <div class="col-md-5">
                 <p>
-                    The Rubbish Taxi offers obligation free onsite quotes to all of its customers.
-                    This allows us to provide you with a firm price for your rubbish removal job.
+                    <small>The Rubbish Taxi offers obligation free onsite quotes to all of its customers.
+                    This allows us to provide you with a firm price for your rubbish removal job.</small>
                 </p>
             </div>
             <div class="col-md-4">
@@ -40,7 +40,7 @@
         <div class="single-area-section">
             <div class="col-md-6">
                 <h1><?php echo str_replace('Rubbish Removal', '', get_the_title()); ?></h1>
-                <h3><?php the_content(); ?></h3>
+                <?php the_content(); ?>
             </div>
             <div class="col-md-6">
                 <img class="img-responsive" src="<?php echo $thumbnailUrl; ?>"/>
@@ -63,7 +63,7 @@
         <div class="single-area-section">
             <div class="col-md-4">
                 <h1>We Were Here</h1>
-                <h3><?php the_content(); ?></h3>
+                <?php the_content(); ?>
             </div>
             <div class="col-md-8">
                 <div id="embedded-gmap">

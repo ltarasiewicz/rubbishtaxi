@@ -1288,6 +1288,11 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     border-bottom: 3px dotted #0D131A;
 }
 
+.single-area-section p {
+    font-size: 24px;
+}
+
+
 #areas-list {
     height: 300px;
     -webkit-column-count: 4;
