@@ -63,7 +63,10 @@
         <div class="single-area-section">
             <div class="col-md-4">
                 <h1>We Were Here</h1>
-                <?php the_content(); ?>
+                <p>
+                    For rubbish removal in your area see the list above for suburbs that we service.
+                    If your suburb isn't listed, call us to discuss your needs on (02) 9573 1112 or contact us vie email.
+                </p>
             </div>
             <div class="col-md-8">
                 <div id="embedded-gmap">

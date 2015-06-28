@@ -189,32 +189,44 @@ if (commands==""){
 				'depth'           => 0,
 				'walker'          => ''
 			);
-			
+
 			wp_nav_menu( $defaults );
 			
 			?>
             <?php
 
-			$defaults = array(
-				'theme_location'  => 'right-menu',
-				'menu'            => '',
-				'container'       => '',
-				'container_class' => '',
-				'container_id'    => '',
-				'menu_class'      => '',
-				'menu_id'         => '',
-				'echo'            => true,
-				'fallback_cb'     => 'wp_page_menu',
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
-				'depth'           => 0,
-				'walker'          => ''
-			);
-			
-			wp_nav_menu( $defaults );
+//			$defaults = array(
+//				'theme_location'  => 'right-menu',
+//				'menu'            => '',
+//				'container'       => '',
+//				'container_class' => '',
+//				'container_id'    => '',
+//				'menu_class'      => '',
+//				'menu_id'         => '',
+//				'echo'            => true,
+//				'fallback_cb'     => 'wp_page_menu',
+//				'before'          => '',
+//				'after'           => '',
+//				'link_before'     => '',
+//				'link_after'      => '',
+//				'items_wrap'      => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+//				'depth'           => 0,
+//				'walker'          => ''
+//			);
+//
+//			wp_nav_menu( $defaults );
+
+
+         wp_nav_menu( array(
+                 'theme_location'    => 'right-menu',
+                 'depth'             => 2,
+                 'container'         => 'div',
+                 'container_class'   => 'collapse navbar-collapse rbt-main-menu',
+                 'container_id'      => 'bs-example-navbar-collapse-1',
+                 'menu_class'        => 'nav navbar-nav navbar-right',
+                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                 'walker'            => new wp_bootstrap_navwalker())
+         );
 			
 			?>
             

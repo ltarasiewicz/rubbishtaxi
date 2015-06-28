@@ -1336,3 +1336,8 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 .footer.no-border {
     border: none;
 }
+
+.rbt-main-menu li.open > a,
+.rbt-main-menu li.open {
+    background-color: transparent !important;
+}
