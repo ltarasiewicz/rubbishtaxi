@@ -333,6 +333,11 @@ a.logo:hover{
     padding-left: 10px !important;
     line-height: 43px;
     margin-top: 10px;
+    border: none !important;
+}
+
+.ask-area-btn:hover {
+    background-image: url(../images/dist/getAreaBtn-hover.png);
 }
 
 .get-quote-btn{
@@ -1259,7 +1264,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 }
 
 .footer-partial ul > li:last-child > a {
-    border-left: none;
+    /*border-left: none;*/
 }
 
 .footer-partial a:hover {
@@ -1269,8 +1274,8 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 }
 
 .footer-partial li:last-child > a:hover {
-    background-image: url(../images/dist/getAreaBtn-hover.png);
-    border: none;
+    /*background-image: url(../images/dist/getAreaBtn-hover.png);*/
+    /*border: none;*/
 }
 
 .single-area-section .page-head-phone {
