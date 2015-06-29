@@ -5,8 +5,8 @@
     }
 ?>
 <?php
-    $coveredAreasStr = types_render_field('covered-area');
-    $coveredAreasArray = explode(' ', $coveredAreasStr);
+    $coveredAreasStr = types_render_field('covered-area', array('separator' => '|'));
+    $coveredAreasArray = explode('|', $coveredAreasStr);
     $googleMapArea = types_render_field('google-map-area') ? types_render_field('google-map-area') : 'Sydney';
 ?>
 
