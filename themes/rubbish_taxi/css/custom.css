@@ -1346,3 +1346,8 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 .rbt-main-menu li.open {
     background-color: transparent !important;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
