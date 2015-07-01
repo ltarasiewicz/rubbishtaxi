@@ -1347,7 +1347,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     background-color: transparent !important;
 }
 
-img {
+img[class*="wp-image"] {
     max-width: 100%;
     height: auto;
 }
