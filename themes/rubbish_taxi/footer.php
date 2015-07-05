@@ -106,13 +106,18 @@
 </div><!-- Footer -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../wp-content/themes/rubbish_taxi/js/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
+
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+
         /*
          *  Simple image gallery. Uses default settings
          */
-
         $('.fancybox').fancybox();
 
         /*

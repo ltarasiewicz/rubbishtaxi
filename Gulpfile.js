@@ -29,9 +29,10 @@ gulp.task('process-css', function() {
 
     var files = [
         'themes/rubbish_taxi/css/bootstrap.css',
+        'themes/rubbish_taxi/css/flexslider/flexslider.css',
         'themes/rubbish_taxi/css/custom.css',
         'themes/rubbish_taxi/css/responsive.css',
-        'themes/rubbish_taxi/css/jquery.fancybox.css'
+
     ];
 
     return gulp.src(files)
@@ -54,7 +55,7 @@ gulp.task('process-js', function (){
             path.basename += ".min";
         }))
         .pipe(sourcemaps.write('sourcemaps/'))
-        .pipe(gulp.dest("themes/rubbish_taxi/js/"));
+        .pipe(gulp.dest("themes/rubbish_taxi/js/dist/"));
 });
 
 

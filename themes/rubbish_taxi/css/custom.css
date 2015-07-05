@@ -5,7 +5,6 @@
 /*
  * Fonts
  */
- 
 @font-face {
     font-family: 'k792-geometricalbold';
     src: url('../fonts/k792-geometrical-bold-webfont.eot');
@@ -1297,7 +1296,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     font-size: 24px;
 }
 
-
+#removal-services-list,
 #areas-list {
     height: 300px;
     -webkit-column-count: 4;
@@ -1306,11 +1305,23 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     font-size: 24px;
     list-style-type: none;
 }
+
+#removal-services-list {
+    height: auto;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+#removal-services-list li,
 #areas-list li {
     padding-left: 1em;
     text-indent: -.7em;
 }
 
+#removal-services-list li:before,
 #areas-list li:before {
     content: url('../images/dist/bullet-point.png') ;
     padding-right: 7px;
@@ -1350,4 +1361,29 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 img[class*="wp-image"] {
     max-width: 100%;
     height: auto;
+}
+
+#bs-example-navbar-collapse-2 {
+    float: left;
+}
+
+.flexslider.testimonials {
+    text-align: center;
+}
+
+.flexslider.testimonials .testimonial {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.flexslider.testimonials .fa-quote-left {
+    position: relative;
+    top: -6px;
+    left: -6px;
+}
+
+.flexslider.testimonials .fa-quote-right {
+    position: relative;
+    top: -6px;
+    left: 6px;
 }
