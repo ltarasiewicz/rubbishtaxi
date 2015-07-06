@@ -39,7 +39,7 @@
     <div class="row">
         <div class="single-area-section">
             <div class="col-md-6">
-                <h2><?php echo str_replace('Rubbish Removal', '', get_the_title()); ?></h2>
+                <h2><?php echo get_the_title(); ?></h2>
                 <?php the_content(); ?>
             </div>
             <div class="col-md-6">
