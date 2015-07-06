@@ -8,3 +8,8 @@
 /index.php
 /object-cache.php
 /plugins/wordfence/tmp
+plugins/akismet/.htaccess
+themes/twentyfifteen/
+themes/twentyfourteen/
+themes/twentythirteen/
+

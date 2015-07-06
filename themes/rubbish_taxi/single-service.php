@@ -5,8 +5,8 @@
     }
 ?>
 <?php
-    $removalServices = get_posts('post_type=service');
-    $testimonials = get_posts('post_type=testimonial');
+    $removalServices = get_posts(array('post_type' => 'service', 'posts_per_page' => -1, 'order' => 'ASC'));
+    $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' => -1));
 
 ?>
 

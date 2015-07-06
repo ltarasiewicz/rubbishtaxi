@@ -1296,7 +1296,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     font-size: 24px;
 }
 
-#removal-services-list,
+
 #areas-list {
     height: 300px;
     -webkit-column-count: 4;
@@ -1304,6 +1304,10 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     column-count: 4;
     font-size: 24px;
     list-style-type: none;
+}
+
+#removal-services-list {
+    height: auto;
 }
 
 #pricing-benefits-list,
@@ -1434,4 +1438,8 @@ img[class*="wp-image"] {
 
 .header_social {
     display: none;
+}
+
+.navbar-collapse {
+    max-height: none !important;
 }

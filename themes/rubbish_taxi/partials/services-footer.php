@@ -1,4 +1,4 @@
-<?php
+ <?php
 $args = array(
     'post_type' => 'service',
     'posts_per_page' => 7,
@@ -12,7 +12,7 @@ $posts = get_posts($args);
 <ul>
     <?php foreach ($posts as $post) : ?>
         <li>
-            <a href="<?php echo get_permalink(get_page_by_title('Services')) ?>"><?php echo $post->post_title; ?></a>
+            <a href="<?php echo get_permalink($post->ID) ?>"><?php echo $post->post_title; ?></a>
         </li>
     <?php endforeach ?>
 </ul>
