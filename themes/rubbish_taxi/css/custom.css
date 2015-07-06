@@ -1306,6 +1306,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     list-style-type: none;
 }
 
+#pricing-benefits-list,
 #removal-services-list {
     height: auto;
     -webkit-column-count: 1;
@@ -1321,13 +1322,31 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     text-indent: -.7em;
 }
 
-#removal-services-list li:before,
+#pricing-benefits-list li {
+    display: inline-block;
+}
+
+#pricing-benefits-list i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#pricing-benefits-list .tooltip-inner {
+    font-size: 16px;
+}
+
+#pricing-benefits-list li:before,
 #areas-list li:before {
     content: url('../images/dist/bullet-point.png') ;
     padding-right: 7px;
     color: #f9ea49;
     position: relative;
     top: -3px;
+}
+
+#removal-services-list i {
+    margin-right: 5px;
+    color: #FBEA45;
 }
 
 #embedded-gmap {
@@ -1369,6 +1388,10 @@ img[class*="wp-image"] {
 
 .flexslider.testimonials {
     text-align: center;
+}
+
+.flexslider.testimonials .testimonial p{
+    line-height: 1.6em;
 }
 
 .flexslider.testimonials .testimonial {

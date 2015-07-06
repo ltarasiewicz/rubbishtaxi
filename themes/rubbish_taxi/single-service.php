@@ -6,6 +6,8 @@
 ?>
 <?php
     $removalServices = get_posts('post_type=service');
+    $testimonials = get_posts('post_type=testimonial');
+
 ?>
 
 <div class="jumbotron cus_jumbotron service-single-area-cus_jumbotron areax">
@@ -37,7 +39,7 @@
     <div class="row">
         <div class="single-area-section">
             <div class="col-md-6">
-                <h1><?php echo str_replace('Rubbish Removal', '', get_the_title()); ?></h1>
+                <h2><?php echo str_replace('Rubbish Removal', '', get_the_title()); ?></h2>
                 <?php the_content(); ?>
             </div>
             <div class="col-md-6">
@@ -48,19 +50,24 @@
     <div class="row">
         <div class="single-area-section">
                 <div class="col-sm-6">
-                    <h1>All Rubbish Removal Services</h1>
+                    <h2>All Rubbish Removal Services</h2>
                     <ul id="removal-services-list">
                         <?php foreach($removalServices as $service) : ?>
-                        <li><?php echo $service->post_title; ?></li>
+                        <li><i class="fa fa-angle-double-right"></i><a href="<?php echo get_post_permalink($service->ID) ?>"><?php echo $service->post_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
                 <div class="col-sm-6">
-                    <h1>Transparent Pricing</h1>
-                    <ul id="removal-services-list">
-                        <?php foreach($removalServices as $service) : ?>
-                            <li><?php echo $service->post_title; ?></li>
-                        <?php endforeach; ?>
+                    <h2>Transparent Pricing</h2>
+                    <p>When providing you with a price, it is calculated based on and including the following:</p>
+                    <p><small>(Hove on icons for more information)</small></p>
+                    <ul id="pricing-benefits-list">
+                        <li>All tip fees</li><br/>
+                        <li>Charged per cubic metre</li>
+                        <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="right" title="We charge you for what we take, not the trucks capacity"></i><br/>
+                        <li>First hours labour</li>
+                        <i data-toggle="tooltip" data-placement="right" title="On average a truck can be filled within the first hour" class="fa fa-info-circle"></i><br/>
+                        <li>GST – this is included in the price we quote</li></i>
                     </ul>
                 </div>
         </div>
@@ -68,15 +75,17 @@
     <div class="row">
         <div class="single-area-section">
             <div class="col-xs-12">
-                <h1>Testimonials</h1>
+                <h2>Testimonials</h2>
                 <div class="flexslider testimonials">
                     <ul class="slides">
+                        <?php foreach($testimonials as $testimonial) : ?>
                         <li>
                             <div class="testimonial">
-                                <p><i class="fa fa-quote-left"></i>Thank you for the great service. Thank you for the great service. Thank you for the great service<i class="fa fa-quote-right"></i></p>
-                                <p class="pull-right"><small><em>Tom&Jerry, Sydney</em></small></p>
+                                <p><i class="fa fa-quote-left"></i><em><?php echo $testimonial->post_content ?></em><i class="fa fa-quote-right"></i></p>
+                                <p class="pull-right"><small><em><?php echo $testimonial->post_title ?></em></small></p>
                             </div>
                         </li>
+                        <?php endforeach ?>
                     </ul>
                 </div>
              </div>

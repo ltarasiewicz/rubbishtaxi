@@ -10,7 +10,7 @@
  * @since Twenty Ten 1.0
  */
 ?>
-<div class="container footer <?php if ('area' === get_post_type()) { echo 'no-border'; } ?>">
+<div class="container footer <?php if ('area' === get_post_type() || 'service' === get_post_type()) { echo 'no-border'; } ?>">
     <div class="row ">
         <div class="col-sm-3">
             <div class="footer-partial">
@@ -109,11 +109,17 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="../../wp-content/themes/rubbish_taxi/js/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
+
     $(document).ready(function () {
 
         $('.flexslider').flexslider({
-            animation: "slide"
+            animation: "slide",
+            directionNav: false
         });
+
+
+            $('[data-toggle="tooltip"]').tooltip();
+
 
         /*
          *  Simple image gallery. Uses default settings
