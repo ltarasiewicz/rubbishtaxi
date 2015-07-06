@@ -161,9 +161,6 @@ if (commands==""){
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
             
           </div>
@@ -171,32 +168,8 @@ if (commands==""){
          <div class="navbar-collapse collapse">
          <?php
 
-			$defaults = array(
-				'theme_location'  => 'left-menu',
-				'menu'            => '',
-				'container'       => '',
-				'container_class' => '',
-				'container_id'    => '',
-				'menu_class'      => '',
-				'menu_id'         => '',
-				'echo'            => true,
-				'fallback_cb'     => 'wp_page_menu',
-				'before'          => '',
-				'after'           => '',
-				'link_before'     => '',
-				'link_after'      => '',
-				'items_wrap'      => '<ul class="nav navbar-nav">%3$s</ul>',
-				'depth'           => 0,
-				'walker'          => ''
-			);
-
-			wp_nav_menu( $defaults );
-			
-			?>
-            <?php
-
 //			$defaults = array(
-//				'theme_location'  => 'right-menu',
+//				'theme_location'  => 'left-menu',
 //				'menu'            => '',
 //				'container'       => '',
 //				'container_class' => '',
@@ -209,20 +182,33 @@ if (commands==""){
 //				'after'           => '',
 //				'link_before'     => '',
 //				'link_after'      => '',
-//				'items_wrap'      => '<ul class="nav navbar-nav navbar-right">%3$s</ul>',
+//				'items_wrap'      => '<ul class="nav navbar-nav">%3$s</ul>',
 //				'depth'           => 0,
 //				'walker'          => ''
 //			);
 //
 //			wp_nav_menu( $defaults );
+			
+			?>
 
+            <?php
+         wp_nav_menu( array(
+                 'theme_location'    => 'left-menu',
+                 'depth'             => 2,
+                 'container'         => 'div',
+                 'container_class'   => 'collapse navbar-collapse rbt-main-menu left',
+                 'container_id'      => '',
+                 'menu_class'        => 'nav navbar-nav navbar-left',
+                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                 'walker'            => new wp_bootstrap_navwalker())
+         );
 
          wp_nav_menu( array(
                  'theme_location'    => 'right-menu',
                  'depth'             => 2,
                  'container'         => 'div',
-                 'container_class'   => 'collapse navbar-collapse rbt-main-menu',
-                 'container_id'      => 'bs-example-navbar-collapse-1',
+                 'container_class'   => 'collapse navbar-collapse rbt-main-menu right',
+                 'container_id'      => '',
                  'menu_class'        => 'nav navbar-nav navbar-right',
                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                  'walker'            => new wp_bootstrap_navwalker())
