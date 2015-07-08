@@ -60,7 +60,7 @@
                 <div class="col-sm-6">
                     <h2>Transparent Pricing</h2>
                     <p>When providing you with a price, it is calculated based on and including the following:</p>
-                    <p><small>(Hove on icons for more information)</small></p>
+                    <p><small>(Hover on icons for more information)</small></p>
                     <ul id="pricing-benefits-list">
                         <li>All tip fees</li><br/>
                         <li>Charged per cubic metre</li>
