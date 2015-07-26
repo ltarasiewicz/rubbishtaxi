@@ -148,7 +148,7 @@ if (commands==""){
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="cus-menu container add">
-        <a class="logo" href="<?php echo get_option('home'); ?>"> <span><?php echo get_post_meta($post->ID, 'page_title', true); ?></span></a>
+        <a class="logo" href="<?php echo get_option('home'); ?>"> <span><?php echo $mobileHeading = get_post_meta($post->ID, 'page_title', true) ? : get_the_title(); ?></span></a>
 
 <div class="header_social">          
 <a href="https://twitter.com/TheRubbishTaxi"><img src="<?php bloginfo('template_url'); ?>/images/follow-twitter.png" alt="twitter" width="45"></a>
