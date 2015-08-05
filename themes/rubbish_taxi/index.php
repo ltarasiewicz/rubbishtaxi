@@ -80,19 +80,7 @@ foreach( $myposts as $post  ) :
                 <!-- pagination -->
                 
             </div><!-- blog-post-->
-            
-            <!-- archives -->
-            <div class="col-xs-3 col-md-3  col-xs-offset-1 blog_right_bar">
-          		<div class="archives placeholder">
-                     <?php if ( function_exists ( dynamic_sidebar('Archive Section') ) ) : ?>
-					<?php dynamic_sidebar ('Archive Section'); ?>
-                    <?php endif; ?>
-                </div>
-            </div><!-- archives -->
         </div>
-        
-        
-        
     </div><!-- Main -->
     
     
