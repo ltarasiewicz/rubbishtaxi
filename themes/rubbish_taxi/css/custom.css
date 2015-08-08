@@ -49,6 +49,10 @@
 }
 
 
+h3 {
+    font-size: 26px;
+}
+
 body { 
 	background-color: #ffffff;
   	padding-bottom: 30px;
@@ -1288,6 +1292,10 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
     padding-top: 30px;
     overflow: hidden;
     border-bottom: 3px dotted #0D131A;
+}
+
+.single-area-section img {
+
 }
 
 .single-area-section p {

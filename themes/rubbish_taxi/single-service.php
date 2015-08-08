@@ -38,12 +38,10 @@
     </div>
     <div class="row">
         <div class="single-area-section">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h2><?php echo get_the_title(); ?></h2>
+                <img class="img-responsive pull-right img-thumbnail" src="<?php echo $thumbnailUrl; ?>"/>
                 <?php the_content(); ?>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="<?php echo $thumbnailUrl; ?>"/>
             </div>
         </div>
     </div>
