@@ -1295,7 +1295,7 @@ button.close{ top: -35px !important ; opacity: 1; position: absolute;}
 }
 
 .single-area-section img {
-
+    margin: 0 0 10px 10px;
 }
 
 .single-area-section p {
