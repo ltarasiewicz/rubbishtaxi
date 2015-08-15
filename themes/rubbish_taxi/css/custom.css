@@ -53,6 +53,14 @@ h3 {
     font-size: 26px;
 }
 
+p {
+    font-size: 24px;
+}
+
+.blog-content h1 {
+    font-size: 30px;
+}
+
 body { 
 	background-color: #ffffff;
   	padding-bottom: 30px;
@@ -93,7 +101,6 @@ p{margin-bottom: 20px;}
 	margin-bottom:70px;
 }
 .cus-page-header h1{
-	font-size: 1.688em;
 	border:none;
 	margin:0;
 	padding:0;
@@ -122,6 +129,7 @@ h2.a_center{ text-align:center !important; display:block;  }
 .cus-page-header .page-head-phone a, .page-head-phone p { display:block; height:40px; }
 h1, h2{
  	font-family: vtks_untitledregular, sans-serif;
+    line-height: 1.5em;
  }
 h1{
 	margin-bottom: 40px;

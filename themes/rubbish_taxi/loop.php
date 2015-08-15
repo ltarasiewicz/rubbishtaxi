@@ -141,9 +141,9 @@
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="blog-post blog">
                 <div class="post-date"><?php the_time('j'); ?><span><?php the_time('M'); ?></span></div>
-                <h1 class="sub-header1"><a class='blog_header' href="<?php the_permalink(); ?>"
+                <h2><a class='blog_header' href="<?php the_permalink(); ?>"
                                            title="<?php printf(esc_attr__('Permalink to %s', 'twentyten'), the_title_attribute('echo=0')); ?>"
-                                           rel="bookmark"><?php the_title(); ?></a></h1>
+                                           rel="bookmark"><?php the_title(); ?></a></h2>
 
                 <div class="blog-content">
                     <?php echo strlen(substr(get_the_content(), 0, 100)) ? substr(get_the_content(), 0, 200) . '&hellip;&nbsp;&nbsp;' : get_the_content() . '&nbsp;&nbsp;'; ?>

@@ -23,10 +23,10 @@
       <span>
       <?php the_time('M'); ?>
       </span></div>
-    <h1 class="sub-header1">
+    <h2>
       <?php the_title(); ?>
-    </h1>
-    <div class="blog-content"> <?php echo get_the_content(); ?> </div>
+    </h2>
+    <div class="blog-content"> <?php echo the_content(); ?> </div>
     <span class="pull-left comment-count">
     <?php comments_popup_link( __( 'Leave a comment', 'twentyten' ), __( 'Comments 1', 'twentyten' ), __( 'Comments %', 'twentyten' ) ); ?>
     </span> </div>
