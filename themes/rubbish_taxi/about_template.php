@@ -65,7 +65,7 @@
         <div class="who-we-are" style="display:none;">
             <div class="row placeholders">
                 <div class="col-xs-12 placeholder">
-                    <h1 class="title-header1 text-center">Who we are</h1>
+                    <h1 class="text-center">Who we are</h1>
                     <div class="row">
                     <?php
 					global $post;

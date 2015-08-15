@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-xs-12 placeholder">
                 <a name="see_photos"></a>
-                	<h1 class="title-header1 text-center">The Rubbish taxi photo gallery</h1>
+                	<h1 class="text-center">The Rubbish taxi photo gallery</h1>
                 	<div id="container">
                     
                      <?php

@@ -126,7 +126,7 @@ get_header();
   <div class="row placeholders testimonial">
     <div class="clearfix">
       <div class="col-sm-12 placeholder">
-        <h1 class="title-header1 text-center">Testimonials</h1>
+        <h1 class="text-center">Testimonials</h1>
       </div>
     </div>
     <div class="clearfix test-content-holder">
