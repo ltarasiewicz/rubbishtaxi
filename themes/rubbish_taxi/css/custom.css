@@ -86,6 +86,16 @@ div#page-404 .message-404 i {
     margin-bottom: 30px;
 }
 
+.alignleft {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
 
 /*
  *	Global add-ons
@@ -98,7 +108,6 @@ p{margin-bottom: 20px;}
 .cus-page-header{
 	border-bottom:3px dotted #000;
 	padding-bottom:22px;
-	margin-bottom:70px;
 }
 .cus-page-header h1{
 	border:none;
@@ -428,9 +437,9 @@ a.logo:hover{
  */
  
 .main{
-	padding-top:50px;
+	margin-top: 25px;
 }
- 
+
 
 
 /* Home Page */
