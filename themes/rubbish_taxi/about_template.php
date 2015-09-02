@@ -9,7 +9,7 @@
             <div class="row top-portion">
              <?php if ( function_exists ( dynamic_sidebar('Banner Section For About Page') ) ) : ?>
 						<?php dynamic_sidebar ('Banner Section For About Page'); ?>
-                        <?php endif; ?>   
+                        <?php endif; ?>
             </div>
             <div class="row">
                 <!-- jumbo-footer -->

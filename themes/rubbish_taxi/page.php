@@ -15,21 +15,7 @@
 get_header(); ?>
 
 <div class="jumbotron cus_jumbotron service-area-cus_jumbotron areax">
-  <div class="container jumbotron-content">
-    <div class="row top-portion">
-      <?php if ( function_exists ( dynamic_sidebar('Banner Section For Areas We Service Page') ) ) : ?>
-      <?php dynamic_sidebar ('Banner Section For Areas We Service Page'); ?>
-      <?php endif; ?>
-    </div>
-    <div class="row"> 
-      <!-- jumbo-footer -->
-      <div class="jumbo-footer clearfix">
-        <?php if ( function_exists ( dynamic_sidebar('Home Banner Below Section') ) ) : ?>
-        <?php dynamic_sidebar ('Home Banner Below Section'); ?>
-        <?php endif; ?>
-      </div>
-    </div>
-  </div>
+
 </div>
 
 <!-- Main section -->
@@ -43,7 +29,7 @@ get_header(); ?>
   </div>
   <div class="row">
     <div class="col-xs-12 placeholder">
-      <div class="two-col">
+
         <?php
 			/* Run the loop to output the page.
 			 * If you want to overload this in a child theme then include a file
@@ -51,7 +37,7 @@ get_header(); ?>
 			 */
 			get_template_part( 'loop', 'page' );
 			?>
-      </div>
+
     </div>
   </div>
 </div>
