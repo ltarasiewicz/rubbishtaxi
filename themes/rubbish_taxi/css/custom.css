@@ -1106,6 +1106,10 @@ cursor: pointer;
 	border-right: none;
 }
 
+.nav>li>a {
+    padding: 10px 13px;
+}
+
 
 
 .placeholder ul li a{ color:#989898; text-decoration:none;  }
