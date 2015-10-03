@@ -205,7 +205,7 @@ if (commands==""){
 
          wp_nav_menu( array(
                  'theme_location'    => 'right-menu',
-                 'depth'             => 2,
+                 'depth'             => 3,
                  'container'         => 'div',
                  'container_class'   => 'collapse navbar-collapse rbt-main-menu right',
                  'container_id'      => '',

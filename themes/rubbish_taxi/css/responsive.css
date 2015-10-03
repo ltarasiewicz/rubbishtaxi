@@ -319,6 +319,10 @@ a.logo span{display:none;}
 
 @media screen and  (max-width: 767px) {
 
+    #suburbs-list > a {
+        width: 100%;
+    }
+
 	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
 	.rubbishBefore{ width:100% !important; }
 	.get{display:none;}
@@ -613,6 +617,10 @@ a.logo span{display:none;}
 
     .ask-area-btn {
         background-position: center;
+    }
+
+    #suburbs-list > a {
+        width: 49%;
     }
 }
 
