@@ -11,7 +11,9 @@ $googleMapArea = types_render_field('google-map-area') ? types_render_field('goo
 $childAreas = get_children([
     'post_parent' => get_the_ID(),
     'post_type' => 'area',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'numberposts' => -1,
+
 ]);
 $currentArea = get_post(get_the_ID());
 $parentArea = $currentArea->post_parent;
@@ -19,10 +21,18 @@ $parentArea = $currentArea->post_parent;
 $siblingAreas = get_posts([
     'post_type' => 'area',
     'post_parent' => $parentArea,
-    'post__not_in' => [$currentArea->ID]
+    'post__not_in' => [$currentArea->ID],
+    'posts_per_page' => -1
 ]);
 
+$topLevelAreas  = get_posts([
+    'post_type' => 'area',
+    'post_parent' => 0,
+    'posts_per_page' => -1,
+    'post__not_in' => [$currentArea->ID]
+]);
 ?>
+
 <div class="jumbotron cus_jumbotron service-single-area-cus_jumbotron areax">
     <div class="container jumbotron-content">
         <div class="row top-portion">
@@ -80,6 +90,19 @@ $siblingAreas = get_posts([
                     <div id="suburbs-list">
                         <?php foreach ($siblingAreas as $siblingArea) : ?>
                             <a href="<?php echo esc_url(get_permalink($siblingArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $siblingArea->post_title; ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php elseif ($topLevelAreas) : ?>
+        <div class="single-area-section">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
+                    <div id="suburbs-list">
+                        <?php foreach ($topLevelAreas as $topLevelArea) : ?>
+                            <a href="<?php echo esc_url(get_permalink($topLevelArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $topLevelArea->post_title; ?></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
