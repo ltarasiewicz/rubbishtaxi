@@ -2,6 +2,7 @@
 <?php
 if (has_post_thumbnail()) {
     $thumbnailUrl = wp_get_attachment_url(get_post_thumbnail_id());
+    var_dump($thumbnailUrl);
 }
 ?>
 <?php
@@ -65,7 +66,7 @@ $topLevelAreas  = get_posts([
         <div class="single-area-section">
             <div class="col-md-12">
                 <h2><?php echo str_replace('Rubbish Removal', '', get_the_title()); ?></h2>
-                <img class="img-responsive pull-right img-thumbnail" src="<?php echo isset($thumbnailUrl) ?: ''; ?>"/>
+                <img class="img-responsive pull-right img-thumbnail" src="<?php echo isset($thumbnailUrl) ? $thumbnailUrl : ''; ?>"/>
                 <?php the_content(); ?>
             </div>
         </div>
