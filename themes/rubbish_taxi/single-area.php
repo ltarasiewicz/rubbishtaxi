@@ -13,6 +13,15 @@ $childAreas = get_children([
     'post_type' => 'area',
     'post_status' => 'publish'
 ]);
+$currentArea = get_post(get_the_ID());
+$parentArea = $currentArea->post_parent;
+
+$siblingAreas = get_posts([
+    'post_type' => 'area',
+    'post_parent' => $parentArea,
+    'post__not_in' => [$currentArea->ID]
+]);
+
 ?>
 <div class="jumbotron cus_jumbotron service-single-area-cus_jumbotron areax">
     <div class="container jumbotron-content">
@@ -50,7 +59,7 @@ $childAreas = get_children([
             </div>
         </div>
     </div>
-    <?php if (isset($childAreas) && is_array($childAreas) ) : ?>
+    <?php if (isset($childAreas) && !empty($childAreas) ) : ?>
     <div class="single-area-section">
         <div class="row">
             <div class="col-xs-12">
@@ -63,6 +72,19 @@ $childAreas = get_children([
             </div>
         </div>
     </div>
+    <?php elseif (isset($siblingAreas) && !empty($siblingAreas)) : ?>
+        <div class="single-area-section">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
+                    <div id="suburbs-list">
+                        <?php foreach ($siblingAreas as $siblingArea) : ?>
+                            <a href="<?php echo esc_url(get_permalink($siblingArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $siblingArea->post_title; ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
     <?php endif ?>
 
     <div class="row">
