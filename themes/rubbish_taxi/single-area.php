@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 <?php
-if (has_post_thumbnail()) {
-    $thumbnailUrl = wp_get_attachment_url(get_post_thumbnail_id());
-    var_dump($thumbnailUrl);
-}
-?>
-<?php
+
+if (has_post_thumbnail()) $thumbnailUrl = wp_get_attachment_url(get_post_thumbnail_id());
 $coveredAreasStr = types_render_field('covered-area', array('separator' => '|'));
 $coveredAreasArray = explode('|', $coveredAreasStr);
 $googleMapArea = types_render_field('google-map-area') ? types_render_field('google-map-area') : 'Sydney';
