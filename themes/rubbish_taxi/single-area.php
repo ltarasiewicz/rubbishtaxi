@@ -57,7 +57,7 @@ $childAreas = get_children([
                 <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
                 <div id="suburbs-list">
                     <?php foreach ($childAreas as $childArea) : ?>
-                        <a href="<?php esc_url(get_permalink($childArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $childArea->post_title; ?></a>
+                        <a href="<?php echo esc_url(get_permalink($childArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $childArea->post_title; ?></a>
                     <?php endforeach; ?>
                 </div>
             </div>
