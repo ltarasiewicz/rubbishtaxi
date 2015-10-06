@@ -8,6 +8,7 @@ if (has_post_thumbnail()) {
 $coveredAreasStr = types_render_field('covered-area', array('separator' => '|'));
 $coveredAreasArray = explode('|', $coveredAreasStr);
 $googleMapArea = types_render_field('google-map-area') ? types_render_field('google-map-area') : 'Sydney';
+
 $childAreas = get_children([
     'post_parent' => get_the_ID(),
     'post_type' => 'area',
@@ -16,11 +17,11 @@ $childAreas = get_children([
 
 ]);
 $currentArea = get_post(get_the_ID());
-$parentArea = $currentArea->post_parent;
+$parentArea = get_post($currentArea->post_parent);
 
 $siblingAreas = get_posts([
     'post_type' => 'area',
-    'post_parent' => $parentArea,
+    'post_parent' => $currentArea->post_parent,
     'post__not_in' => [$currentArea->ID],
     'posts_per_page' => -1
 ]);
@@ -73,7 +74,7 @@ $topLevelAreas  = get_posts([
     <div class="single-area-section">
         <div class="row">
             <div class="col-xs-12">
-                <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
+                <h1>Areas We Cover<br/><?php echo $parentArea->post_title; ?></h1>
                 <div id="suburbs-list">
                     <?php foreach ($childAreas as $childArea) : ?>
                         <a href="<?php echo esc_url(get_permalink($childArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $childArea->post_title; ?></a>
@@ -86,7 +87,7 @@ $topLevelAreas  = get_posts([
         <div class="single-area-section">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
+                    <h1>Areas We Cover<br/><?php echo $parentArea->post_title; ?></h1>
                     <div id="suburbs-list">
                         <?php foreach ($siblingAreas as $siblingArea) : ?>
                             <a href="<?php echo esc_url(get_permalink($siblingArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $siblingArea->post_title; ?></a>
@@ -99,7 +100,7 @@ $topLevelAreas  = get_posts([
         <div class="single-area-section">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Areas We Cover<br/><?php echo get_the_title(); ?></h1>
+                    <h1>Areas We Cover<br/><?php echo $parentArea->post_title; ?></h1>
                     <div id="suburbs-list">
                         <?php foreach ($topLevelAreas as $topLevelArea) : ?>
                             <a href="<?php echo esc_url(get_permalink($topLevelArea->ID)) ?>" type="button" class="btn btn-info"><?php echo $topLevelArea->post_title; ?></a>
