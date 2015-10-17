@@ -1484,3 +1484,21 @@ img[class*="wp-image"] {
 .navbar-collapse {
     max-height: none !important;
 }
+
+#quoteModal input,
+#quoteModal textarea {
+    width: 100%;
+    max-height: 200px;
+}
+
+.modal-header {
+    background-color: #F4DF12;
+    text-align: center;
+}
+
+#quoteModal input[type=submit] {
+    background: -webkit-linear-gradient(#F4DF12, #FDFBA8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F4DF12, #FDFBA8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F4DF12, #FDFBA8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F4DF12, #FDFBA8); /* Standard syntax */
+}
