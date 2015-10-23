@@ -54,7 +54,7 @@
                         <p>
                             110 Renwick Street, Marrickville NSW 2204,<br/>
                             AustraliaPO Box 922, Marrickville NSW 1475E<br/>
-                            <strong>info@rubbishtaxi.com.au</strong>
+                            info@rubbishtaxi.com.au
                         </p>
                     </div>
                 </div>

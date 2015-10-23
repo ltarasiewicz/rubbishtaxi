@@ -11,30 +11,29 @@
  */
 ?>
 <div class="container footer <?php if ('area' === get_post_type() || 'service' === get_post_type() || is_front_page()) { echo 'no-border'; } ?>">
-    <footer>
-        <div class="row ">
-            <div class="col-sm-3">
-                <div class="footer-partial">
-                    <?php get_template_part('partials/services', 'footer'); ?>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="footer-partial">
-                    <?php get_template_part('partials/areas', 'footer'); ?>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="footer-partial">
-                    <?php get_template_part('partials/articles', 'footer'); ?>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <?php if ( function_exists ( dynamic_sidebar('Follow Section') ) ) : ?>
-                    <?php dynamic_sidebar ('Follow Section'); ?>
-                <?php endif; ?>
+    <div class="row ">
+        <div class="col-sm-3">
+            <div class="footer-partial">
+                <?php get_template_part('partials/services', 'footer'); ?>
             </div>
         </div>
-    </footer>
+        <div class="col-sm-3">
+            <div class="footer-partial">
+                <?php get_template_part('partials/areas', 'footer'); ?>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="footer-partial">
+                <?php get_template_part('partials/articles', 'footer'); ?>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <?php if ( function_exists ( dynamic_sidebar('Follow Section') ) ) : ?>
+                <?php dynamic_sidebar ('Follow Section'); ?>
+            <?php endif; ?>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-sm-12">
             <div class="sub-footer">
@@ -79,7 +78,9 @@
                     'depth' => 0,
                     'walker' => ''
                 );
+
                 wp_nav_menu($defaults);
+
                 ?>
             </div>
         </div>
@@ -96,8 +97,9 @@
             animation: "slide",
             directionNav: false
         });
-    }
+    });
 </script>
+
 <?php wp_footer(); ?>
 
 <!-- Google Tag Manager -->
@@ -105,8 +107,7 @@
     <iframe src="//www.googletagmanager.com/ns.html?id=GTM-57Q7K6"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
-<script>
-    (function (w, d, s, l, i) {
+<script>(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
             'gtm.start': new Date().getTime(), event: 'gtm.js'
@@ -117,8 +118,8 @@
         j.src =
             '//www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-57Q7K6');
-</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-57Q7K6');</script>
 <!-- End Google Tag Manager -->
+
 </body>
 </html>
