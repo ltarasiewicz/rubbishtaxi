@@ -143,16 +143,13 @@
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="cus-menu container add">
-        <a class="logo" href="<?php echo get_option('home'); ?>">
-            <span><?php echo $mobileHeading = get_post_meta($post->ID, 'page_title', true) ?: get_the_title(); ?></span></a>
-
+        <a class="logo" href="<?php echo get_option('home'); ?>"></a>
         <div class="header_social">
             <a href="https://twitter.com/TheRubbishTaxi"><img
                     src="<?php bloginfo('template_url'); ?>/images/follow-twitter.png" alt="twitter" width="45"></a>
             <a href="https://www.facebook.com/pages/The-Rubbish-Taxi/123269484398408" class="pull-right"><img
                     src="<?php bloginfo('template_url'); ?>/images/follow-facebook.png" alt="facebook" height="34"></a>
         </div>
-
 
         <div class="navx">
             <div class="container-fluid">
@@ -211,14 +208,13 @@
                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                             'walker' => new wp_bootstrap_navwalker())
                     );
-
                     ?>
-
                 </div>
                 <!--/.nav-collapse -->
             </div>
             <!--/.container-fluid -->
         </div>
+
     </div>
 </div>
 

@@ -3,7 +3,8 @@
 ?>
 <?php get_header(); ?>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" xmlns="http://www.w3.org/1999/html"></script>
-    <div class="jumbotron cus_jumbotron contact-cus_jumbotron conx">
+    <div class="header contact">
+        <h1><?php echo $mobileHeading = get_post_meta($post->ID, 'page_title', true) ?: get_the_title(); ?></h1>
     </div>
     <div class="container main contact">
         <h2>HOW CAN WE HELP YOU?</h2>

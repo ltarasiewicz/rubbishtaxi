@@ -73,8 +73,6 @@
   .step1image {display:none;}
 }
 
-a.logo span{display:none;}
-
 .border{display:none; }
 @media screen and (min-width: 1025px) and (max-width:1366px) 
 {

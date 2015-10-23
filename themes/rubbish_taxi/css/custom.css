@@ -953,10 +953,10 @@ cursor: pointer;
 	border:2px solid #000000;
 }
 .contact-cus_jumbotron h1{
-	font-size: 197px;
-	float:left;
-	display:inline;
-	line-height:206px;
+
+	text-align:center;
+	display:block;
+
 }
 .contact-cus_jumbotron h2{
 	font-size: 20px;
@@ -1176,30 +1176,12 @@ a.btn-primary{border:0; outline: 0; }
 	    width: 401px;
 		display:none;
 	}
-.contact-cus_jumbotron{
-	background:url(../images/dist/contact-us-bg.jpg) no-repeat;	
+.contact.header{
+	background:url(../images/dist/contact-us-bg_565.jpg) no-repeat;
 	background-position:top center;
     background-size: cover;
 	width:100%;
-	height:900px;
-	/*padding-top:206px;*/
-	padding-top:180px;
-	position:relative;
-}
-.jumbotron_st2{
-	background:url(../images/dist/contact-us-bg2.jpg) no-repeat center top; 
-	background-position:top center;
-	width:100%;
-	height:900px;
-	/*padding-top:206px;*/
-	padding-top:180px;
-	position:relative;
-}
-.jumbotron_st3{
-	background:url(../images/dist/contact-us-bg3.jpg) no-repeat  center top;
-	background-position:top center;
-	width:100%;
-	height:900px;
+	height:565px;
 	/*padding-top:206px;*/
 	padding-top:180px;
 	position:relative;
@@ -1251,7 +1233,6 @@ ul.nonelist{ list-style:none !important; }
     width: 431px;
 }
 
-a.logo span{ display:none; } 
 .page-head-phone span{font-size:26px; color: #000; padding-left:30px;   }
 .modal-header h4{font-family: vtks_untitledregular,sans-serif;}
 
@@ -1555,4 +1536,8 @@ img[class*="wp-image"] {
 
 .container.main.contact p {
     font-size: 20px;
+}
+
+.header h1 {
+    text-align: center;
 }
