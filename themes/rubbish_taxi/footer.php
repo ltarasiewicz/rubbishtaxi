@@ -10,87 +10,91 @@
  * @since Twenty Ten 1.0
  */
 ?>
-<div class="container footer <?php if ('area' === get_post_type() || 'service' === get_post_type() || is_front_page()) { echo 'no-border'; } ?>">
-    <div class="row ">
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/services', 'footer'); ?>
+<div class="container footer <?php if ('area' === get_post_type() || 'service' === get_post_type() || is_front_page()) {
+    echo 'no-border';
+} ?>">
+    <footer>
+        <div class="row ">
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/services', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/areas', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/articles', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <?php if (function_exists(dynamic_sidebar('Follow Section'))) : ?>
+                    <?php dynamic_sidebar('Follow Section'); ?>
+                <?php endif; ?>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/areas', 'footer'); ?>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sub-footer">
+                    <?php
+
+                    $defaults = array(
+                        'theme_location' => 'footer-menu',
+                        'menu' => '',
+                        'container' => '',
+                        'container_class' => '',
+                        'container_id' => '',
+                        'menu_class' => '',
+                        'menu_id' => '',
+                        'echo' => true,
+                        'fallback_cb' => 'wp_page_menu',
+                        'before' => '',
+                        'after' => '',
+                        'link_before' => '',
+                        'link_after' => '',
+                        'items_wrap' => '<ul class="ftr_nav">%3$s</ul>',
+                        'depth' => 0,
+                        'walker' => ''
+                    );
+
+                    wp_nav_menu($defaults);
+
+                    $defaults = array(
+                        'theme_location' => 'footer-menu-mobile',
+                        'menu' => '',
+                        'container' => '',
+                        'container_class' => '',
+                        'container_id' => '',
+                        'menu_class' => '',
+                        'menu_id' => '',
+                        'echo' => true,
+                        'fallback_cb' => 'wp_page_menu',
+                        'before' => '',
+                        'after' => '',
+                        'link_before' => '',
+                        'link_after' => '',
+                        'items_wrap' => '<ul class="text_centre">%3$s</ul>',
+                        'depth' => 0,
+                        'walker' => ''
+                    );
+
+                    wp_nav_menu($defaults);
+
+                    ?>
+                </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/articles', 'footer'); ?>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <?php if ( function_exists ( dynamic_sidebar('Follow Section') ) ) : ?>
-                <?php dynamic_sidebar ('Follow Section'); ?>
-            <?php endif; ?>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="sub-footer">
-                <?php
-
-                $defaults = array(
-                    'theme_location' => 'footer-menu',
-                    'menu' => '',
-                    'container' => '',
-                    'container_class' => '',
-                    'container_id' => '',
-                    'menu_class' => '',
-                    'menu_id' => '',
-                    'echo' => true,
-                    'fallback_cb' => 'wp_page_menu',
-                    'before' => '',
-                    'after' => '',
-                    'link_before' => '',
-                    'link_after' => '',
-                    'items_wrap' => '<ul class="ftr_nav">%3$s</ul>',
-                    'depth' => 0,
-                    'walker' => ''
-                );
-
-                wp_nav_menu($defaults);
-
-                $defaults = array(
-                    'theme_location' => 'footer-menu-mobile',
-                    'menu' => '',
-                    'container' => '',
-                    'container_class' => '',
-                    'container_id' => '',
-                    'menu_class' => '',
-                    'menu_id' => '',
-                    'echo' => true,
-                    'fallback_cb' => 'wp_page_menu',
-                    'before' => '',
-                    'after' => '',
-                    'link_before' => '',
-                    'link_after' => '',
-                    'items_wrap' => '<ul class="text_centre">%3$s</ul>',
-                    'depth' => 0,
-                    'walker' => ''
-                );
-
-                wp_nav_menu($defaults);
-
-                ?>
-            </div>
-        </div>
-    </div>
-
+    </footer>
 </div><!-- Footer -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="../../wp-content/themes/rubbish_taxi/js/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript"
+        src="../../wp-content/themes/rubbish_taxi/js/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.flexslider').flexslider({
