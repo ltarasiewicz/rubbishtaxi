@@ -11,29 +11,30 @@
  */
 ?>
 <div class="container footer <?php if ('area' === get_post_type() || 'service' === get_post_type() || is_front_page()) { echo 'no-border'; } ?>">
-    <div class="row ">
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/services', 'footer'); ?>
+    <footer>
+        <div class="row ">
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/services', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/areas', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-partial">
+                    <?php get_template_part('partials/articles', 'footer'); ?>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <?php if ( function_exists ( dynamic_sidebar('Follow Section') ) ) : ?>
+                    <?php dynamic_sidebar ('Follow Section'); ?>
+                <?php endif; ?>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/areas', 'footer'); ?>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="footer-partial">
-                <?php get_template_part('partials/articles', 'footer'); ?>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <?php if ( function_exists ( dynamic_sidebar('Follow Section') ) ) : ?>
-                <?php dynamic_sidebar ('Follow Section'); ?>
-            <?php endif; ?>
-        </div>
-    </div>
-
+    </footer>
     <div class="row">
         <div class="col-sm-12">
             <div class="sub-footer">

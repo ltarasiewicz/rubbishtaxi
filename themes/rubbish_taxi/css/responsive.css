@@ -11,7 +11,7 @@
 .get_quote{ display: block !important}
 .about_person{ min-height: 506px;}
 .hide_desk_or{ font-size: 20px; color: #000; text-shadow: none; display: none; margin-left: 30px;}
-.contact_header{ display: none;}
+.contact_header{ display: block;}
 .contact_header h1{ float: left; font-size: 200px; margin-right: 20px;}
 .step3, .step2, .step1{ min-height: 300px;}
 .step2, .step3{ opacity: 1;}
@@ -50,6 +50,9 @@
 }
 
 @media screen and  (min-width: 1001px) {
+    #main-contact-form {
+        padding-right: 40px;
+    }
     .rbt-main-menu.left {
         float: left;
     }
@@ -91,8 +94,6 @@ a.logo span{display:none;}
 {
 	.cus-menu{ width:100% !important; padding: 20px 0 0 0 !important; margin:0px;  }
 	.rubbishBefore{ width:100% !important; }
-	.cus_jumbotron .container { width:100% !important; padding: 0 !important; margin:0px;   }
-	.container { width:100% !important; padding: 0 !important; margin:0px;   }
 	.jumbotron { padding: 0px 10px; width:100%; }
 	.jumbo-left-col .col-sm-8{margin-right:0px !important;}
 	.jumbo-right-col .col-sm-4{margin-left:0px !important;}
@@ -180,8 +181,7 @@ a.logo span{display:none;}
 	.blog-img-holder{ display: none;}
 	.blog-cus_jumbotron{ height: 879px !important;}
 	.contact_header{ display: block;}
-	
-	.form-control{ width: 70%;}
+
 	
 	.map_service img{ width: 100%;}
 	.title-header1{ margin-bottom: 0px;}
@@ -231,8 +231,6 @@ a.logo span{display:none;}
 	
 	.modal-body{display:block !important;}
 	.modal-dialog{display:block !important;}
-	
-	.btn-submit{ width:153px; height:40px; background: url("../images/dist/submit-btn.png") no-repeat -41px center; border:#000 1px solid;  }
 	
 	.border{display:block; }
 	
