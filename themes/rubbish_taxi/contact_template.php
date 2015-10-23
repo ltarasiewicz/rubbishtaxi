@@ -29,11 +29,11 @@
                     <div class="form-group clearfix">
                         <div class="radio-buttons-group">
                             <label class="radio-inline">
-                                <input type="radio" name="type">
+                                <input type="radio" name="type" value="Domestic">
                                 <span class="radio-text">Domestic</span>
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="type">
+                                <input type="radio" name="type" value="Commercial">
                                 <span class="radio-text">Commercial</span>
                             </label>
                         </div>
