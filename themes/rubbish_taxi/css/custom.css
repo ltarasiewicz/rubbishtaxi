@@ -106,7 +106,6 @@ p.p_size{ font-size:25px; }
 
 p{margin-bottom: 20px;} 
 .cus-page-header{
-	border-bottom:3px dotted #000;
 	padding-bottom:22px;
 }
 .cus-page-header h1{
@@ -117,10 +116,7 @@ p{margin-bottom: 20px;}
 	margin-top: 10px;
 }
 .cus-page-header .page-head-phone{
-	float:right;
-	/*background:url(../images/dist/pageHead-phone-no.png) no-repeat;*/
 	background-position:top center;
-	/*width:263px;*/
 	height:44px;
 	
 }
@@ -1540,4 +1536,14 @@ img[class*="wp-image"] {
 
 .header h1 {
     text-align: center;
+}
+
+.inner-section {
+    overflow: hidden;
+    border-bottom: 3px dotted #0D131A;
+    padding-bottom: 30px;
+}
+
+#embedded-map {
+    padding-top: 30px;
 }

@@ -33,7 +33,7 @@ get_header(); ?>
         <div class="col-xs-12 placeholder">
             <h1>Blog</h1>
 
-            <div class="page-head-phone"><a href="#" target="_blank"> 02 9573 1112 <span class="hide_desk_or">or</span></a>
+            <div class="page-head-phone pull-right"><a href="#" target="_blank"> 02 9573 1112 <span class="hide_desk_or">or</span></a>
             </div>
             <a name="see_post"></a>
 

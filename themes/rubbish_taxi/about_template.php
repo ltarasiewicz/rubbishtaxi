@@ -35,7 +35,7 @@
         <div class="row cus-page-header ">
             <div class="col-xs-12 placeholder">
                 <h1><?php echo get_the_title(22); ?></h1>
-                <div class="page-head-phone"><?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?></div>
+                <div class="page-head-phone pull-right"><?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?></div>
                 <div class="get">
                 	<a  href="<?php echo get_permalink(18); ?>" class="get-quote-btn btn btn-primary btn-lg col-sm-4" data-toggle="modal" data-target="#myModal">Get A Quote</a>
 					

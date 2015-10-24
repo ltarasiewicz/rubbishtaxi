@@ -10,6 +10,7 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
                 <div class="row top-portion add_none">
                     <div class=" col-sm-8 home_inner_banner">
                         <h1><?php echo get_post_meta($post->ID, 'heading', true); ?></h1>
+
                         <div class=" col-sm-12">
                             <div class="placeholder clearfix">
                                 <div
@@ -44,33 +45,29 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
         </div>
     </div>
     <div class="container main">
-        <div class="row cus-page-header">
+        <div class="row">
             <div class="col-sm-12 placeholder">
-                <div class="page-head-phone">
-                    <?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?> </div>
-                <div class="get"><a href="<?php echo get_permalink(18); ?>" target="_blank" class="get-quote-btn">Get A
-                        Quote</a></div>
+                <div class="inner-section">
+                    <div class="page-head-phone pull-right">
+                        <?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?>
+                    </div>
+                    <div class="get">
+                        <a href="<?php echo get_permalink(18); ?>" target="_blank" class="get-quote-btn">Get A Quote</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="placeholder">
+            <div class="col-sm-12">
+                <div class="inner-section">
                     <?php the_content(); ?>
+                    <a href="<?php echo get_permalink(18); ?>" target="_blank" class="get-quote-btn">Get A Quote</a>
+                </div>
             </div>
         </div>
-        <div class="container main">
-            <div class="row placeholders"><a href="<?php echo get_permalink(18); ?>" target="_blank"
-                                             class="get-quote-btn">Get A Quote</a></div>
-            <div class="placeholder clearfix services add">
-                <?php if (function_exists(dynamic_sidebar('Services Section'))) : ?>
-                    <?php dynamic_sidebar('Services Section'); ?>
-                <?php endif; ?>
-            </div>
-
-            <div class="row">
-                <div class="single-area-section">
-                    <div class="col-xs-12">
+        <div class="row">
+                <div class="col-xs-12">
                         <h2>Testimonials</h2>
-
                         <div class="flexslider testimonials">
                             <ul class="slides">
                                 <?php foreach ($testimonials as $testimonial) : ?>
@@ -80,6 +77,7 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
                                                 <i class="fa fa-quote-left"></i><em><?php echo $testimonial->post_content ?></em>
                                                 <i class="fa fa-quote-right"></i>
                                             </p>
+
                                             <p class="pull-right">
                                                 <small><em><?php echo $testimonial->post_title ?></em></small>
                                             </p>
@@ -88,9 +86,9 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
                                 <?php endforeach ?>
                             </ul>
                         </div>
-                    </div>
+
                 </div>
-            </div>
+
         </div>
     </div>
 <?php get_footer(); ?>

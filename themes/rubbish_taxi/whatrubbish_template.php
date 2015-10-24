@@ -10,7 +10,7 @@
             <div class="col-xs-12 placeholder">
                 <h1><?php echo get_the_title(); ?></h1>
 
-                <div class="page-head-phone"><a href="#" target="_blank">02 9573 1112<span
+                <div class="page-head-phone pull-right"><a href="#" target="_blank">02 9573 1112<span
                             class="hide_desk_or">or</span></a></div>
                 <div class="get">
                     <a href="<?php echo get_permalink(18); ?>" class="get-quote-btn btn btn-primary btn-lg col-sm-4"
