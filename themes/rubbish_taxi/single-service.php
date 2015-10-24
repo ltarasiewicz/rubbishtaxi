@@ -35,7 +35,7 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
                         <div class="page-head-phone"><p>02 9573 1112 <span class="hide_desk_or">or</span></p></div>
                     </div>
                     <div class="col-md-3">
-                        <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
+                        <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn pull-right">Get A Quote</a>
                     </div>
                 </div>
             </div>
