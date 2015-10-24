@@ -56,8 +56,7 @@ $topLevelAreas = get_posts([
                         <div class="page-head-phone"><p>02 9573 1112 <span class="hide_desk_or">or</span></p></div>
                     </div>
                     <div class="col-md-3">
-                        <a href="http://rubbishtaxi.local/contact-us/" target="_blank" class="get-quote-btn">Get A
-                            Quote</a>
+                        <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
                     </div>
                 </div>
             </div>

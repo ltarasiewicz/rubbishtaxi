@@ -184,7 +184,6 @@ a.cus-link {
     padding-right: 40px;
 }
 .btn-submit{
-	float:left;
 	width: 272px;
 	height: 58px;
 	background:url(../images/dist/submit-btn.png) no-repeat;
@@ -1464,57 +1463,61 @@ img[class*="wp-image"] {
     max-height: none !important;
 }
 
-#quoteModal input,
+#quoteModal input[type=text],
 #quoteModal textarea {
     width: 100%;
     max-height: 200px;
 }
 
 .modal-header {
-    background-color: #F4DF12;
-    text-align: center;
+    background-color: #0a0702;
+    color: #fff;
+    text-align: left;
 }
 
-#quoteModal input[type=submit] {
-    background: -webkit-linear-gradient(#F4DF12, #FDFBA8); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#F4DF12, #FDFBA8); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#F4DF12, #FDFBA8); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#F4DF12, #FDFBA8); /* Standard syntax */
-}
-#main-contact-form textarea,
-#main-contact-form input {
+.main-contact-form textarea,
+.main-contact-form input {
     font-size: 23px;
     border: 2px solid #000;
 }
 
-#main-contact-form input[type=submit] {
+.main-contact-form input[type=submit] {
     border: none;
 }
 
-#main-contact-form .btn-submit {
-    float: right;
+.main-contact-form .btn-submit {
     width: 200px;
     height: 58px;
     background-size: contain;
 }
 
-#main-contact-form .radio-buttons-group {
+.main-contact-form .radio-buttons-group.table-display {
     height: 50px;
     display: table;
     float: left;
     width: 250px;
 }
 
-#main-contact-form .radio-buttons-group label {
+.main-contact-form .radio-buttons-group.table-display label {
     display: table-cell;
 }
 
-#main-contact-form .radio-buttons-group label input[type=radio] {
+.main-contact-form .radio-buttons-group label input[type=radio] {
     width: 20px;
     height: 20px;
 }
 
-#main-contact-form .radio-buttons-group label .radio-text {
+
+.main-contact-form input[type=submit] {
+    display: block;
+}
+
+.modal .main-contact-form input[type=submit] {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.main-contact-form .radio-buttons-group label .radio-text {
     margin-left: 10px;
     line-height: 30px;
     font-size: 20px;

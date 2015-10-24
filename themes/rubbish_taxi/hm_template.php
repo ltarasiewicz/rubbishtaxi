@@ -52,7 +52,7 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
                         <?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?>
                     </div>
                     <div class="get">
-                        <a href="<?php echo get_permalink(18); ?>" target="_blank" class="get-quote-btn">Get A Quote</a>
+                        <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ $testimonials = get_posts(array('post_type' => 'testimonial', 'posts_per_page' =
             <div class="col-sm-12">
                 <div class="inner-section">
                     <?php the_content(); ?>
-                    <a href="<?php echo get_permalink(18); ?>" target="_blank" class="get-quote-btn">Get A Quote</a>
+                    <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
                 </div>
             </div>
         </div>
