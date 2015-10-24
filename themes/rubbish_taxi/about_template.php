@@ -2,46 +2,29 @@
 /*Template Name: About Us*/
 ?>
 <?php get_header(); ?>
-<div class="jumbotron cus_jumbotron aboutUs-cus_jumbotron aboutx">
-        <div class="about-us-before "></div>
-        <!--<div class="about-us-after"></div>-->
-        <div class="container jumbotron-content">
-            <div class="row top-portion">
-             <?php if ( function_exists ( dynamic_sidebar('Banner Section For About Page') ) ) : ?>
-						<?php dynamic_sidebar ('Banner Section For About Page'); ?>
-                        <?php endif; ?>
-            </div>
-            <div class="row">
-                <!-- jumbo-footer -->
-                <div class="row jumbo-footer">
-            	<!-- jumbo-footer -->
-                <div class=" clearfix">
-                	<div class="phone col-sm-4">
-                			<?php echo get_post_meta($post->ID, 'phone', true); ?>	
-                    	
-                    </div>
-                   <?php if ( function_exists ( dynamic_sidebar('Home Banner Below Section') ) ) : ?>
-						<?php dynamic_sidebar ('Home Banner Below Section'); ?>
-                        <?php endif; ?>
-					
-
-                    
-            	</div>
-            </div>
-            </div>
-        </div>
-    </div>
+<div class="header about-us">
+    <h1><?php echo get_the_title(22); ?></h1>
+</div>
 <div class="container main">
         <div class="row cus-page-header ">
             <div class="col-xs-12 placeholder">
-                <h1><?php echo get_the_title(22); ?></h1>
-                <div class="page-head-phone pull-right"><?php echo get_post_meta($post->ID, 'phone_samll_device', true); ?></div>
-                <div class="get">
-                	<a  href="<?php echo get_permalink(18); ?>" class="get-quote-btn btn btn-primary btn-lg col-sm-4" data-toggle="modal" data-target="#myModal">Get A Quote</a>
-					
-				
+                <div class="row">
+                <div class="quote-block col-sm-8">
+                    <p>
+                        <small>
+                            Rubbish Taxi offers obligation free onsite quotes to all its customers.
+                            This allows us to provide you with a firm price for your rubbish removal job.
+                        </small>
+                    </p>
+                    <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
                 </div>
-                
+                <div class="call-block col-sm-4">
+                    <p><small>If you have any questions, give us a call</small></p>
+                    <div class="page-head-phone pull-right">
+                        <p>02 9573 1112</p>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
         

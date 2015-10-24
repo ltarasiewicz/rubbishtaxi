@@ -17,13 +17,6 @@ get_header(); ?>
 <!-- JUMBOTRON -->
 <div class="jumbotron cus_jumbotron blog-cus_jumbotron blogx">
     <div class="container jumbotron-content">
-        <div class="row top-portion">
-            <div class="jumbo-left-col">
-                <?php if (function_exists(dynamic_sidebar('Banner Section For Blog Page'))) : ?>
-                    <?php dynamic_sidebar('Banner Section For Blog Page'); ?>
-                <?php endif; ?>
-            </div>
-        </div>
     </div>
 </div>
 
