@@ -30,7 +30,7 @@ $services = get_posts($args);
                         <div class="col-sm-4">
                             <h3>Why choose the rubbish taxi?</h3>
                             <p>You won't find a friendlier, more reliable rubbish removal company anywhere in Sydney.</p>
-                            <a href="http://rubbishtaxi.com.au/about-us/" class="cus-link pull-left">Read more</a>
+                            <a href="http://rubbishtaxi.com.au/about-us/" class="cus-link">Read more</a>
                         </div>
                         <div class="col-sm-4">
                             <h3>Services</h3>
@@ -45,10 +45,10 @@ $services = get_posts($args);
                         <div class="col-sm-4">
                             <div class="contact-block">
                                 <p>If you have any questions call</p>
-                                <div class="page-head-phone pull-left clearfix">
+                                <div class="page-head-phone clearfix">
                                     <p>02 9573 1112</p>
                                 </div>
-                                <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn pull-left">Get A Quote</a>
+                                <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
                             </div>
                         </div>
                     </div>

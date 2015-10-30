@@ -215,6 +215,9 @@
 	.cus-menu{ background:none; }
 	.style1.nodes{display:none;}
 	.cus_jumbotron { background-size:20%; background: url("../images/dist/homeTopBg.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);}
+    .hp-icons-block h3 {
+        font-size: 18px;
+    }
 	
 	/*------debashis---------*/
 	
@@ -401,7 +404,7 @@
 	background: url(../images/dist/btm.png) no-repeat;
 	background-position: right;
 	font-size: 1.375em;
-	padding-right:40px;}
+	padding-right:60px;}
  	
 	.border{display:block; }
 	
