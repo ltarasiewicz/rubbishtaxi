@@ -16,6 +16,12 @@
 .step3, .step2, .step1{ min-height: 300px;}
 .step2, .step3{ opacity: 1;}
 
+@media (min-width: 510px) {
+    .jumbotron .jumbo-footer {
+        padding-top: 80px;
+    }
+}
+
 @media (min-width: 768px) {
     .header_social {
         position: absolute;
@@ -43,6 +49,7 @@
     .navbar-right {
         float: right !important;
     }
+
 }
 
 @media all and (max-width:480px){
@@ -493,6 +500,14 @@
     	background-size:115%!important;
     
    		 height: 300px;
+
+    .jumbotron .jumbo-footer {
+        padding-top: 0;
+    }
+
+    .jumbotron .jumbo-footer h1 {
+        font-size: 24px;
+    }
 	
 }
 .form-submit input[type="submit"]{ margin-left:0px;}
