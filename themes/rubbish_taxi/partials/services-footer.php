@@ -6,7 +6,6 @@ $args = array(
 );
 
 $posts = get_posts($args);
-//var_dump($posts);
 ?>
 <h4>Rubbish Removal Services</h4>
 <ul>

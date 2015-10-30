@@ -76,7 +76,6 @@
 .border{display:none; }
 @media screen and (min-width: 1025px) and (max-width:1366px) 
 {
-	.jumbo-footer{ padding-left: 0;}
 	.jumbo-footer .text2{ width: 33%;}
 	.contact-email {
     float: right;
@@ -208,7 +207,7 @@
 	.phone{display:none; }
 	.text{display:none;}
 	.cus_jumbotron{padding: 180px 0px 0 0 !important;}
-	.jumbo-footer{display:none;}
+	.jumbo-footer{text-align: center; width: 100%; padding-left: 0; padding-right: 0;}
 	h1.nopne{display:none;}
 	.cus-page-header .page-head-phone  {float:left; }
 	.get{display:block; float:right;  }
