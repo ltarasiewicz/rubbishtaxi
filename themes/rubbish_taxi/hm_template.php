@@ -63,20 +63,22 @@ $services = get_posts($args);
                         <div class="hp-icons-block">
                             <div class="col-xs-4 text-center">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/dist/ico1.png"/>
-                                <h3>TRUSTED AND<br/>PROFESSIONAL</h3>
+                                <h3><strong>TRUSTED AND<br/>PROFESSIONAL</strong></h3>
                             </div>
                             <div class="col-xs-4 text-center">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/dist/ico2.png"/>
-                                <h3>FULLY INSURED</h3>
+                                <h3><strong>FULLY INSURED</strong></h3>
                             </div>
                             <div class="col-xs-4 text-center">
                                 <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/dist/ico3.png"/>
-                                <h3>WE RECYCLE</h3>
+                                <h3><strong>WE RECYCLE</strong></h3>
                             </div>
                         </div>
                     </div>
-                    <?php echo types_render_field('content-below-icons'); ?>
-                    <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn">Get A Quote</a>
+                    <div class="bottom-content">
+                        <?php echo types_render_field('content-below-icons'); ?><a class="cus-link" href="http://rubbishtaxi.local/service/charity/">&nbsp;Read more</a>
+                    </div>
+                    <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn pull-right">Get A Quote</a>
                 </div>
             </div>
         </div>

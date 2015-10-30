@@ -1575,3 +1575,7 @@ img[class*="wp-image"] {
 .hp-icons-block img {
     margin: 0 auto;
 }
+
+.bottom-content p {
+    display: inline;
+}
