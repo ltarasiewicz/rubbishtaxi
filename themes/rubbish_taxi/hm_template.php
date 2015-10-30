@@ -76,7 +76,7 @@ $services = get_posts($args);
                         </div>
                     </div>
                     <div class="bottom-content">
-                        <?php echo types_render_field('content-below-icons'); ?><a class="cus-link" href="http://rubbishtaxi.local/service/charity/">&nbsp;Read more</a>
+                        <?php echo types_render_field('content-below-icons'); ?><a class="cus-link" href="http://rubbishtaxi.local/what-rubbish/">&nbsp;Read more</a>
                     </div>
                     <a href="#" data-toggle="modal" data-target="#quoteModal" target="_blank" class="get-quote-btn pull-right">Get A Quote</a>
                 </div>
