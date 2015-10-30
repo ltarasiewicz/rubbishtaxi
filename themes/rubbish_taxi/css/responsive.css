@@ -98,7 +98,6 @@
 	.phone span{ font-size:20px !important; }
 	.container_main{ width:100% !important; }
 	.container{ width:100% !important; }
-	.jumbo-footer{ padding-left:0px;}
 	.top-portion{ margin: 0px !important;} 
 	.navbar-collapse ul li a{ padding: 12px 5px;}
 	.container.add{margin-top:60px;   }
@@ -207,7 +206,7 @@
 	.phone{display:none; }
 	.text{display:none;}
 	.cus_jumbotron{padding: 180px 0px 0 0 !important;}
-	.jumbo-footer{text-align: center; width: 100%; padding-left: 0; padding-right: 0;}
+	.jumbo-footer{text-align: center; width: 80%; padding-left: 0; padding-right: 0; margin: 0 auto;}
 	h1.nopne{display:none;}
 	.cus-page-header .page-head-phone  {float:left; }
 	.get{display:block; float:right;  }
