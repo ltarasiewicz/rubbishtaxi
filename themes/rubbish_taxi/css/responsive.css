@@ -54,6 +54,13 @@
 
 @media all and (max-width:480px){
   .step2, .step3{ opacity: 1;}
+
+}
+
+@media all and (max-width:320px){
+    .row.jumbo-footer {
+        display: none;
+    }
 }
 
 @media screen and  (min-width: 1001px) {
@@ -532,11 +539,10 @@
 	.footer ul li{ font-size:11px; }
 	
 	.services.add{ display:block; }
-	a.cus-link{ border:#333 1px solid; width:100%; text-align:center; float:none; margin:0;   }
+
 	
 	/*------debashis---------*/
 	.services.add{ display:block; }
-	a.cus-link{ border:#333 1px solid; width:100%; text-align:center; float:none; margin:0;   }
 	
 	.hidden_tab{border-top: 3px dotted #0D131A; border-bottom: 3px dotted #0D131A; padding:30px 0px 50px; }
 	a.logo{background-size:67%; left:50%;  }
